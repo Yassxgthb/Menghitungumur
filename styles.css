@@ -85,7 +85,7 @@ button:hover {
 #result {
   margin-top: 30px;
   padding: 20px;
-  background-color: #c4c4c4;
+  background-color: #e2e2e2;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   color: #000000;
@@ -97,13 +97,13 @@ button:hover {
 }
 
 #result p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #000000;
   margin: 15px 0;
   font-weight: 500;
   font-style: normal;
   font-display: block;
-  font-weight: bold;
+
 }
 
 .hidden {

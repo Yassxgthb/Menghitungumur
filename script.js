@@ -40,7 +40,7 @@ document.getElementById('age-form').addEventListener('submit', function (e) {
   const nextBirthdayFormatted = nextBirthdayDate.toLocaleDateString('id-ID', options);
 
   // Menampilkan hasil
-  const ageText = `Umur Anda adalah ${years} Tahun, ${months} Bulan, dan ${days} Hari`;
+  const ageText = `Umur Anda sekarang adalah ${years} Tahun, ${months} Bulan, dan ${days} Hari`;
   const daysLivedText = `Anda telah hidup selama ${daysLived} hari`;
   const nextBirthdayText = `Ulang Tahun Anda berikutnya adalah ${nextBirthdayFormatted} (${nextBirthdayMonth} bulan, ${nextBirthdayDay} hari lagi)`;
 
