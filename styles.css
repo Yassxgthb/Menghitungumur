@@ -1,0 +1,128 @@
+/* Reset beberapa properti untuk konsistensi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #0077b6, #00b4d8); /* Latar belakang gradasi biru */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  transform: translateY(-30px); /* Efek mulai dari bawah */
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+}
+
+input[type="date"] {
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #00b4d8;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+}
+
+input[type="date"]:focus {
+  border-color: #0077b6;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 183, 216, 0.8);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0077b6;
+}
+
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  display: -moz-popup;
+  width: 100%;
+  max-width: 500px;
+  transform: translateY(-20px); /* Efek muncul dari bawah */
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+#result p {
+  font-size: 1.1rem;
+  color: #000000;
+  margin: 15px 0;
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animasi */
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
